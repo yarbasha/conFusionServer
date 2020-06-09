@@ -61,7 +61,7 @@ dishRouter.route('/:dishId')
       $set: req.body
     }, { new: true })
       .then((dish) => {
-        console.log('Dish Created ', dish);
+        console.log('Dish Updated ', dish);
         res.statusCode = 200;
         res.setHeader('Content-Type', 'application/json');
         res.json(dish);
